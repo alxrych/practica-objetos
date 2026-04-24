@@ -118,8 +118,17 @@ coche.frenar();   // Frenando... Velocidad actual: 0 km/h (no baja de 0)
 
 //7. Recorrer un objeto
 //Enunciado: Crea un objeto producto con las propiedades nombre, precio, cantidad. Usa un ciclo for...in para imprimir todas las propiedades y sus valores.
+// Crear el objeto producto
+const producto = {
+  nombre: "Ratón vertical",
+  precio: 25.99,
+  cantidad: 10
+};
 
-
+// Recorrer sus propiedades con for...in e imprimirlas
+for (let propiedad in producto) {
+  console.log(propiedad + ": " + producto[propiedad]);
+}
 
 
 //8. Contar propiedades
